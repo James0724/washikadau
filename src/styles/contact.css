@@ -1,0 +1,191 @@
+.contact-form-w {
+  width: 100%;
+  max-width: 600px;
+}
+
+.h3 {
+  font-family: DM Serif Display, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.form-label {
+  font-family: DM Serif Display, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form-input {
+  height: 50px;
+  color: var(--dark-slate-grey);
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px dotted rgba(50, 55, 58, 0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form-input:focus {
+  border-color: #32373a;
+}
+
+.form-input::-ms-input-placeholder {
+  color: #c8cdcf;
+}
+
+.form-input::placeholder {
+  color: #c8cdcf;
+}
+
+.cta-form {
+  height: 50px;
+  background-color: var(--light-goldenrod-yellow-2);
+  color: var(--dark-slate-grey);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+  font-family: DM Serif Display, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  transition: all 0.2s;
+  display: flex;
+}
+
+.cta-form:hover {
+  background-color: var(--dark-sea-green);
+}
+
+.form-success {
+  background-color: var(--light-goldenrod-yellow-2);
+  border-radius: 5px;
+}
+
+.form-success-text {
+  color: var(--dark-slate-grey);
+  font-family: DM Serif Display, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-error-message {
+  text-align: center;
+  background-color: #ffd9ca;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-error-message-text {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.w-form {
+  margin: 0 0 15px;
+}
+
+.w-form-done {
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  display: none;
+}
+
+.w-form-fail {
+  background-color: #ffdede;
+  margin-top: 10px;
+  padding: 10px;
+  display: none;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+.w-input,
+.w-select {
+  width: 100%;
+  height: 38px;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  display: block;
+}
+
+.w-input:-moz-placeholder,
+.w-select:-moz-placeholder {
+  color: #999;
+}
+
+.w-input::-moz-placeholder,
+.w-select::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.w-input::-webkit-input-placeholder,
+.w-select::-webkit-input-placeholder {
+  color: #999;
+}
+
+.w-input:focus,
+.w-select:focus {
+  border-color: #3898ec;
+  outline: 0;
+}
+
+.w-input[disabled],
+.w-select[disabled],
+.w-input[readonly],
+.w-select[readonly],
+fieldset[disabled] .w-input,
+fieldset[disabled] .w-select {
+  cursor: not-allowed;
+}
+
+.w-input[disabled]:not(.w-input-disabled),
+.w-select[disabled]:not(.w-input-disabled),
+.w-input[readonly],
+.w-select[readonly],
+fieldset[disabled]:not(.w-input-disabled) .w-input,
+fieldset[disabled]:not(.w-input-disabled) .w-select {
+  background-color: #eee;
+}
+
+textarea.w-input,
+textarea.w-select {
+  height: auto;
+}
+
+.w-select {
+  background-color: #f3f3f3;
+}
+
+.w-select[multiple] {
+  height: auto;
+}
+
+.w-form-label {
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: normal;
+  display: inline-block;
+}

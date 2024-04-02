@@ -1,0 +1,201 @@
+.about-hero {
+  width: 100%;
+  height: 125vh;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.about-hero-w {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.about-hero-header-w {
+  position: relative;
+}
+
+/* .about-hero-header-fill-w {
+  /* z-index: 200;
+  position: absolute;
+  top: 8vw;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+  overflow: hidden; */
+/* } */
+
+.about-hero-header-fill {
+  z-index: 30;
+  position: relative;
+  top: 6rem;
+  font-family: HeadingFontItalic, sans-serif;
+  font-size: 8vw;
+  font-weight: 400;
+  line-height: 8vw;
+  color: white;
+}
+
+.about-hero-polaroid-01-w {
+  z-index: 30;
+  position: absolute;
+  top: 17vw;
+  bottom: auto;
+  left: 38%;
+  right: auto;
+  transform: rotate(30deg);
+}
+
+.about-hero-polaroid-inner-01-w {
+  position: relative;
+}
+
+.about-hero-polaroid-container {
+  z-index: 10;
+  width: 25vw;
+  position: relative;
+}
+
+.about-hero-polaroid-02-w {
+  z-index: 15;
+  position: absolute;
+  top: 6vw;
+  bottom: auto;
+  left: auto;
+  right: 55%;
+  transform: rotate(-15deg);
+}
+
+.about-hero-polaroid-inner-02-w {
+  position: relative;
+}
+
+.about-hero-polaroid-image-02-w {
+  z-index: 10;
+  width: 87%;
+  height: 74%;
+  background-image: url("../../public/assets/images/PBA_7443alogo.jpg");
+  background-position: 50%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  bottom: auto;
+  left: 5%;
+  right: auto;
+}
+
+.about-hero-polaroid-image-01-w {
+  z-index: 10;
+  width: 87%;
+  height: 74%;
+  background-image: url("../../public/assets/images/DSC_4134z.jpg");
+  background-position: 50%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  bottom: auto;
+  left: 5%;
+  right: auto;
+}
+
+.about-hero-polaroid-03-w {
+  z-index: 20;
+  position: absolute;
+  top: 12vw;
+  bottom: auto;
+  left: 55%;
+  right: auto;
+  transform: rotate(15deg);
+}
+
+.about-hero-polaroid-inner-03-w {
+  position: relative;
+}
+
+.about-hero-polaroid-image-03-w {
+  z-index: 10;
+  width: 87%;
+  height: 74%;
+  background-image: url("../../public/assets/images/LUC_3580a.jpg");
+  background-position: 50%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  bottom: auto;
+  left: 5%;
+  right: auto;
+}
+@media screen and (max-width: 991px) {
+  .about-hero-header-fill-w {
+    top: 20vw;
+  }
+
+  .about-hero-polaroid-01-w {
+    top: 80vw;
+    bottom: auto;
+    left: auto;
+    right: -4vw;
+  }
+
+  .about-hero-polaroid-container {
+    width: 60vw;
+  }
+
+  .about-hero-polaroid-02-w {
+    top: 40vw;
+    bottom: auto;
+    left: -12vw;
+    right: auto;
+  }
+
+  .about-hero-polaroid-03-w {
+    top: 30vw;
+    bottom: auto;
+    left: auto;
+    right: -2vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-who {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .about-who-image-w {
+    width: 100%;
+    height: 90vw;
+    margin-top: 120px;
+  }
+
+  .about-who-text-w {
+    width: 100%;
+    padding-left: 10vw;
+  }
+
+  .max-w-280 {
+    max-width: none;
+  }
+
+  .about-who-img-01 {
+    height: 60vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-hero {
+    height: 110vh;
+  }
+}

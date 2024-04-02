@@ -1,0 +1,94 @@
+.about-who {
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+}
+
+.about-who-image-w {
+  z-index: 30;
+  width: 60%;
+  height: 60vw;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.about-who-text-w {
+  width: 40%;
+  padding-left: 120px;
+  padding-right: 10vw;
+}
+
+.max-w-280 {
+  max-width: 280px;
+}
+
+.about-who-img-01-w {
+  z-index: 10;
+  width: 50%;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-who-img-01 {
+  width: 100%;
+  height: 40vw;
+  background-image: url("../../public/assets/images/DSC_4199a.jpg");
+  background-position: 50%;
+  background-size: cover;
+  padding: 0;
+}
+
+.about-who-img-02-w {
+  z-index: 20;
+  width: 75%;
+  padding: 0;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+  overflow: hidden;
+}
+
+.img-plus-tl {
+  z-index: 40;
+  width: 10px;
+  position: absolute;
+  top: 30px;
+  bottom: auto;
+  left: 30px;
+  right: auto;
+}
+
+.img-plus-tr {
+  z-index: 40;
+  width: 10px;
+  position: absolute;
+  top: 30px;
+  bottom: auto;
+  left: auto;
+  right: 30px;
+}
+
+.img-plus-bl {
+  z-index: 40;
+  width: 10px;
+  position: absolute;
+  top: auto;
+  bottom: 30px;
+  left: 30px;
+  right: auto;
+}
+
+.img-plus-br {
+  z-index: 40;
+  width: 10px;
+  position: absolute;
+  top: auto;
+  bottom: 30px;
+  left: auto;
+  right: 30px;
+}

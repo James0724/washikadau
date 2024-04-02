@@ -1,0 +1,39 @@
+.footer .button {
+  background-color: #0a010c;
+}
+.footer .button span {
+  background: #fafafa;
+}
+.footer .button span img {
+  filter: invert(1);
+}
+.footer .contact-page__info__cap span {
+  background-color: #0a010c;
+}
+.contact-page__info__cap span {
+  background: #fafafa;
+  display: block;
+  height: 2px;
+  width: 2rem;
+  margin-bottom: 2.5rem;
+}
+.contact-page__info__links {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.social-img {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-bottom: 0;
+  filter: invert(1);
+}
+
+.client-hero {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  @apply p-5 md:p-20 md:py-0 py-20;
+}

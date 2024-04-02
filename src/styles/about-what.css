@@ -1,0 +1,84 @@
+.about-what {
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+}
+
+.about-what-image-w {
+  z-index: 20;
+  width: 60%;
+  height: 60vw;
+  flex-direction: column;
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.about-what-img-01-w {
+  z-index: 10;
+  width: 50%;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-what-img-01 {
+  width: 100%;
+  height: 40vw;
+  background-image: url("https://assets-global.website-files.com/61ff0c3770bb04614ffb9f4d/649c77b90bca09c6575fed83_Polaroid05.jpg");
+  background-position: 50%;
+  background-size: cover;
+  padding: 0;
+}
+
+.about-what-img-02-w {
+  z-index: 30;
+  width: 75%;
+  padding: 0;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+  overflow: hidden;
+}
+
+.about-what-img-02 {
+  width: 100%;
+  height: 40vw;
+  background-image: url("https://assets-global.website-files.com/61ff0c3770bb04614ffb9f4d/649c77b9c111360ad1a38544_Polaroid04.jpg");
+  background-position: 50%;
+  background-size: cover;
+  padding: 0;
+}
+
+.about-what-text-w {
+  width: 40%;
+  padding-left: 10vw;
+  padding-right: 120px;
+}
+
+@media screen and (max-width: 991px) {
+  .about-what {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .about-what-image-w {
+    width: 100%;
+    height: 90vw;
+    margin-top: 40px;
+  }
+
+  .about-what-img-01,
+  .about-what-img-02 {
+    height: 60vw;
+  }
+
+  .about-what-text-w {
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}

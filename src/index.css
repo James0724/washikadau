@@ -1,13 +1,213 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Instrument+Serif:ital@1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "MuliLight";
+  src: url("../public/assets/fonts/muli.light.ttf");
+}
+@font-face {
+  font-family: "MuliRegural";
+  src: url("../public/assets/fonts/muli.regular.ttf");
+}
+@font-face {
+  font-family: "HeadingFont";
+  src: url("../public/assets/fonts/joane-extralight.otf");
+}
+@font-face {
+  font-family: "HeadingFontItalic";
+  src: url("../public/assets/fonts/joane-extralight.otf");
+}
+@font-face {
+  font-family: "Expert";
+  src: url("../public/assets/fonts/Expert\ 20.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button {
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.251);
+  border-radius: 50rem;
+  backdrop-filter: blur(10px);
+  @apply py-3 px-5;
+}
+
+@media (max-width: 500px) {
+  .button {
+    padding: 8px 14px;
+  }
+}
+
+.button a {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  @apply text-xs text-white font-MuliLight;
+}
+
+.button p {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.1px;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  @apply text-xs;
+}
+
+.button span {
+  background: #0a010c;
+  border-radius: 50rem;
+  position: relative;
+  margin-left: 3rem;
+  overflow: hidden;
+  @apply w-10 h-10;
+}
+
+@media (max-width: 500px) {
+  .button span {
+    margin-left: 24px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.button img {
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button img:first-child {
+  margin-left: -100%;
+}
+
+.button:hover img:first-child {
+  margin-left: 0%;
+}
+
+.button:hover img:last-child {
+  margin-left: 100%;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.butt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 10px;
+  @apply h-[30px] md:w-[80px] w-[60px];
+}
+.butt .slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.butt .slider .el {
+  width: 100%;
+  height: 100%;
+  background-color: #dc2626;
+}
+.butt .slider .el p {
+  margin: 0px;
+  color: #ffff;
+}
+.butt .slider .el:nth-of-type(2) {
+  background-color: black;
+}
+.butt .slider .el:nth-of-type(2) p {
+  color: #ffff;
+}
+.butt .slider .el:hover .perspectiveText {
+  transform: rotateX(90deg);
+}
+.butt .slider .el:hover .perspectiveText p:nth-of-type(1) {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.butt .slider .el:hover .perspectiveText p:nth-of-type(2) {
+  opacity: 1;
+}
+.perspectiveText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.perspectiveText p {
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+  pointer-events: none;
+  text-transform: uppercase;
+}
+.perspectiveText p:nth-of-type(2) {
+  position: absolute;
+  transform-origin: bottom center;
+  transform: rotateX(-90deg) translateY(9px);
+  opacity: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 40px 50px 40px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.nav .body {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.nav .body .linkContainer {
+  perspective: 120px;
+  perspective-origin: bottom;
+}
+/* .nav .body a {
+  text-decoration: none;
+  color: black;
+  font-size: 46px;
+} */
+.nav .footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav .footer a {
+  width: 50%;
+  margin-top: 5px;
+}
+.header {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+}
+/* .header .menu {
+  width: 480px;
+  height: 650px;
+  background-color: #c9fd74;
+  border-radius: 25px;
+  position: relative;
+} */
+
+input {
+  @apply border border-gray-300 p-4 outline-none;
+}
+.has-mask {
+  position: absolute;
+  clip: rect(10px, 150px, 130px, 10px);
 }

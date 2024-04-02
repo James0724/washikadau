@@ -1,0 +1,44 @@
+import { motion } from "framer-motion";
+
+interface ButtonProps {
+  isActive: boolean;
+  toggleMenu: () => void;
+}
+
+export default function Button({ isActive, toggleMenu }: ButtonProps) {
+  return (
+    <div className="butt">
+      <motion.div
+        className="slider"
+        animate={{ top: isActive ? "-100%" : "0%" }}
+        transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}
+      >
+        <div
+          className="el"
+          onClick={() => {
+            toggleMenu();
+          }}
+        >
+          <PerspectiveText label="Menu" />
+        </div>
+        <div
+          className="el"
+          onClick={() => {
+            toggleMenu();
+          }}
+        >
+          <PerspectiveText label="Close" />
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+function PerspectiveText({ label }: any) {
+  return (
+    <div className="perspectiveText">
+      <p className="md:text-sm text-xs font-Lato">{label}</p>
+      <p className="md:text-sm text-xs font-Lato">{label}</p>
+    </div>
+  );
+}
