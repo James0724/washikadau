@@ -1,10 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
 
-export default function StepThreeUploadForm({
-  goToNext,
-  onFinish,
-  albumData,
-}: any) {
+export default function StepThreeUploadForm({ onFinish, albumData }: any) {
   const [files, setFiles] = useState<File[]>([]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

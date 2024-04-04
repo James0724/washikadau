@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/footer.css";
 import { useLocation } from "react-router-dom";
-import { AuthContext, useAuthContext } from "../../context/AuthContext";
+import { useAuthContext } from "../../context/AuthContext";
 export default function Footer() {
   const { ...AuthContext } = useAuthContext();
   const { user } = AuthContext;
