@@ -1,16 +1,6 @@
-import React, { ChangeEvent, useState } from "react";
+import React from "react";
 
 export default function StepThreeUploadForm({ onFinish, albumData }: any) {
-  const [files, setFiles] = useState<File[]>([]);
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const selectedFiles = e.target.files;
-    if (selectedFiles) {
-      const newFiles = Array.from(selectedFiles);
-      setFiles((prevFiles) => [...prevFiles, ...newFiles]);
-    }
-  };
-
   const handleUpload = () => {
     onFinish();
   };
@@ -43,8 +33,8 @@ export default function StepThreeUploadForm({ onFinish, albumData }: any) {
                 className="text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
                 type="text"
                 name="name"
+                autoComplete="false"
                 placeholder={albumData.name}
-                onChange={handleChange}
               />
             </div>
             <div className="grid grid-cols-1 space-y-2">
@@ -53,18 +43,13 @@ export default function StepThreeUploadForm({ onFinish, albumData }: any) {
               </label>
             </div>
             <div className="max-w-6xl mx-auto duration-1000 delay-300">
-              <ul className="grid grid-cols-2 gap-5 lg:grid-cols-5">
-                {albumData.files &&
-                  files.map((file, index) => (
-                    <li key={index}>
-                      <img
-                        src={URL.createObjectURL(file)}
-                        alt={`file-${index}`}
-                        className="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                      />
-                    </li>
-                  ))}
-              </ul>
+              {albumData.coverImage && (
+                <img
+                  className="object-cover h-full"
+                  src={URL.createObjectURL(albumData.coverImage)}
+                  alt={albumData.coverImage.name}
+                />
+              )}
             </div>
             <div>
               <button

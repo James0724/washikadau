@@ -94,7 +94,7 @@ export default function index({ toggleMenu }: ButtonProps) {
   };
   return (
     <div className="nav">
-      <div className="body">
+      <div className="body text-black">
         {links.map((link, i) => {
           const { title, href } = link;
           return (
@@ -121,7 +121,7 @@ export default function index({ toggleMenu }: ButtonProps) {
           );
         })}
       </div>
-      <motion.div className="footer">
+      <motion.div className="footer text-black">
         {footerLinks.map((link, i) => {
           const { title, href } = link;
           return (

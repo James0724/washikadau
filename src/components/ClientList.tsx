@@ -45,7 +45,7 @@ const ClientList = ({ client }: ClientData) => {
           <div className="flex w-full justify-center relative">
             <div className="absolute bottom-0 w-full z-20">
               <div className="flex justify-center">
-                <h1 className="font-Expert md:text-5xl text-4xl">
+                <h1 className="font-Expert md:text-5xl text-4xl text-black">
                   {client.name} - {client.albumImageUrls.length}pcs
                 </h1>
               </div>

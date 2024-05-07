@@ -1,11 +1,14 @@
 .footer .button {
-  background-color: #0a010c;
+  background-color: #fff;
 }
-.footer .button span {
-  background: #fafafa;
-}
-.footer .button span img {
+/* .footer .button span {
+  background: #373737;
+} */
+/* .footer .button span img {
   filter: invert(1);
+} */
+.footer .button a {
+  @apply text-black;
 }
 .footer .contact-page__info__cap span {
   background-color: #0a010c;

@@ -10,7 +10,7 @@ export default function HeroSlider() {
         spaceBetween={30}
         effect={"fade"}
         autoplay={{
-          delay: 10000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Autoplay]}
@@ -24,10 +24,17 @@ export default function HeroSlider() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Imgix
+          <img
             className="w-full h-screen object-cover"
-            src="https://res.cloudinary.com/ddwkntgdf/image/upload/v1709750101/cpkjxwaro5c4tbbcbmro.jpg"
-            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 100vw, 100vw"
+            src="https://firebasestorage.googleapis.com/v0/b/washikadau-backend.appspot.com/o/assets%2FDJI_0771logo.jpg?alt=media&token=62c05655-e615-426c-aef3-5654300aa6e6"
+            alt="photography"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="w-full h-screen object-cover"
+            src="https://firebasestorage.googleapis.com/v0/b/washikadau-backend.appspot.com/o/assets%2FDSC_4340a.jpg?alt=media&token=56561732-e7eb-4306-abbd-11acb078b150"
+            alt="photography"
           />
         </SwiperSlide>
       </Swiper>

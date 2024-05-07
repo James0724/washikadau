@@ -91,7 +91,7 @@ export default function Login() {
       <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
       <div className="sm:max-w-lg w-full p-10 bg-white rounded-xl z-10">
         {loginQuery.isPending && <h1>loading</h1>}
-        <div className="flex items-center justify-center py-20">
+        <div className="flex items-center justify-center">
           <div className="flex h-full w-1/2 md:w-full grow flex-col items-center justify-center">
             <div className="mb-14 flex-col items-center text-center">
               <h2 className="mb-2 text-3xl font-bold font-HeadingFont">

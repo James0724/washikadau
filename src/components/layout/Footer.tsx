@@ -27,7 +27,7 @@ export default function Footer() {
               </h2>
               <div className="py-10">
                 <button className="button">
-                  <a href="/about/">
+                  <a href="/contact">
                     Get in touch
                     <span>
                       <img
