@@ -1,6 +1,7 @@
 {
   "name": "studio",
   "version": "0.1.0",
+  "homepage": "https://washikadau.com",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.18",
